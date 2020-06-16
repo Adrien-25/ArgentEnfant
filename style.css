@@ -1,0 +1,194 @@
+/*
+Theme Name: Argent Enfant
+Description: Thème enfant du thème argent pour le site MRL
+Author: MRL
+Template: argent
+*/
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.head-container{
+    margin:auto;
+    padding:auto;
+    width:70%;
+}
+
+.header-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.img-header{
+    width: 120%;
+}
+
+.main-navigation {
+	background: #d30916;
+	padding:auto;
+}
+
+.page-container {
+    width: 100%;
+}
+
+.footer-widget-area{
+    margin:auto;
+    width:70%;
+}
+
+@media screen and (min-width: 768px){
+    .main-navigation a {
+        padding: 0 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-menu > li > a:after {
+        content: "";
+        margin:0;
+	}
+}
+
+#primary-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu-item{
+    text-align: center;
+}
+.menu-item:hover{
+    background-color: #a60710;
+}
+
+@media screen and (min-width: 768px){
+    .main-navigation ul li {
+        padding: 0.75em 0.5em 0.75em 0.5em;
+    }
+}
+
+/**
+ * Plug-in Newsticker
+ */
+#newsticker
+{
+    display: table;
+    height: 44px;
+    margin: 15px 0 15px 0;
+    padding: 0 0 0 50px;
+    position: relative;
+    visibility: visible;
+    width: 100%;
+}
+#newsticker-wrapper::before
+{
+    border-color: #ddd rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 1em 0 0 1em;
+    bottom: -1em;
+    content: '';
+    display: block;
+    left: -30px;
+    position: absolute;
+    top: 44px;
+}
+#newsticker-wrapper
+{
+    display: table-cell;
+    font-size: 13px;
+    line-height: 1.36363636364;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#typewriter-prefix::before
+{
+    content: '\f130';
+    font: normal normal normal 30px/1 FontAwesome;
+    line-height: 44px;
+    text-rendering: auto;
+}
+#typewriter-prefix
+{
+    background: #fff;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    height: 44px;
+    margin-left: -80px;
+    position: relative;
+    text-align: center;
+    width: 70px;
+}
+#typewriter-text
+{
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    line-height: 1;
+    max-height: 44px;
+}
+#typewriter-suffix
+{
+    /* display: inline-block;
+    color: #bb0e1d;
+    float: left;
+    margin-top: -2px; */
+    color:white;
+}
+
+.newsticker-alert #newsticker-wrapper::before
+{
+    border-color: #ab2800 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+.newsticker-alert #typewriter-prefix::before
+{
+    content: '\f071';
+}
+.newsticker-alert #typewriter-prefix
+{
+    background: #ef6c00;
+}
+.newsticker-alert #typewriter-text
+{
+    font-weight: bold;
+}
+
+
+@media(min-width: 767px)
+{
+    #newsticker-wrapper
+    {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+} 
+
+body{
+    background-color: black;
+}
+#notepad {
+    color:white;
+    font-size : 1.2em;
+    background-color: black;
+    display:inline;
+    padding: 0.25em 0.5em;
+}
+#notepad:after {
+    content: "|";
+    animation: blinker 300ms linear infinite;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
