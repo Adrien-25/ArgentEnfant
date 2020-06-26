@@ -216,11 +216,23 @@ body{
 
 }
 
+.sub-menu
+{
+    background-color: #ae0611;
+}
 
 
 /**
  * Plug-in Newsticker
  */
+
+.img-moto
+{
+    margin-right:  150px;
+    margin-top: -10px;  
+    margin-left: -50px;
+}
+
 #newsticker
 {
     display: table;
@@ -230,11 +242,12 @@ body{
     position: relative;
     visibility: visible;
     width: 100%;
+    
 }
 #newsticker-wrapper::before
 {
     border-color: #ddd rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-    border-style: solid;
+    border-style: none;
     border-width: 1em 0 0 1em;
     bottom: -1em;
     content: '';
@@ -250,8 +263,12 @@ body{
     line-height: 1.36363636364;
     margin: 0;
     padding: 0;
-    vertical-align: middle;
+    vertical-align: top;
     width: 100%;
+    position: relative;
+    top: -1px;
+    left: -70px;
+
 }
 
 #typewriter-prefix::before
