@@ -51,6 +51,7 @@
 		</nav><!-- #site-navigation -->
 
 		<div id="newsticker">
+			<img class="img-moto" src="<?php echo get_stylesheet_directory_uri() . "/Images/typewriter-icon.png" ?>" alt="">
 			<p id="newsticker-wrapper"><span id="notepad"></span></p>
 		</div>
 	</header><!-- #masthead -->
