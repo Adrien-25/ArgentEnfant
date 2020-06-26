@@ -1,6 +1,6 @@
 /*
 Theme Name: Argent Enfant
-Description: Thème enfant du thème argent pour le site MRL
+Description: Theme enfant du theme argent pour le site MRL
 Author: MRL
 Template: argent
 */
@@ -9,22 +9,151 @@ body{
     margin: 0;
 }
 
-.head-container{
-    margin:auto;
-    padding:auto;
-    width:70%;
+.head-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1100px;
+    margin-left: 200px;
+}
+   
+
+#slogan
+{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 180px;
+    
 }
 
+.bandeau_slogan
+{
+   padding: 1%;
+   margin-top: -5.5%;
+   background-image: url("Images/Ligne_MRL.png");
+   background-position: 2px, 22px;
+
+}
+
+.reseaux
+{
+   position: relative;
+   top: -219px;
+   right: -750px;
+}
+
+.super_banner
+{
+ position: relative;
+ height: 214px;
+ vertical-align: top;
+}
+
+
+.icones_social
+{
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 500px;
+    width: 3em;
+    height: 3em;
+    background-position: left top, 300px top;
+    background-repeat: no-repeat;
+}
+
+.icones_social:hover
+{
+    background-position: -300px top , 0% top;
+
+}
+
+.soundcloud
+{
+    background-image: url("Images/Logo_Soundcloud_Bannière_1.png"), url("Images/Logo_Soundcloud_Banniere_2.png");
+    width: 2.1em;
+    height: 1.25em;
+    vertical-align: 8px;
+    margin: 2px;
+    position: relative;
+    right: 22px;
+
+}
+
+.facebook
+{
+    background-image: url("Images/Logo_FB_Banniere_1.png"), url("Images/Logo_FB_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -8px;
+}
+
+.instagram
+{
+    background-image: url("Images/Logo_Insta_Banniere_1.png"), url("Images/Logo_Insta_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -25px;
+}
+
+.twitter
+{
+    background-image: url("Images/Logo_Twitter_Banniere_1.png"), url("Images/Logo_Twitter_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -1px;
+}
+
+.youtube
+{
+    background-image: url("Images/test_youtube.png"), url("Images/Logo_Youtube_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -17px;
+
+}
+
+.tchat
+{
+    background-image: url("Images/Logo_Tchat_Banniere_1.png"), url("Images/Logo_Tchat_Banniere_2.png");
+    width: 1.8em;
+    height: 2em;
+    vertical-align: -2px;
+    position: relative;
+    right: 12px;
+
+}
+
+.skype
+{
+    background-image: url("Images/Logo_Skype_Banniere_1.png"), url("Images/Logo_Skype_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: 6px;
+
+}
+
+
 .header-style{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     width: 100%;
     margin: auto;
 }
 
 .img-header{
     width: 120%;
+  
 }
 
 .main-navigation {
@@ -55,22 +184,39 @@ body{
 }
 
 #primary-menu{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+   
+   
+
 }
+
+/*
 .menu-item{
     text-align: center;
+    
 }
 .menu-item:hover{
     background-color: #a60710;
 }
 
+*/
+
+
 @media screen and (min-width: 768px){
-    .main-navigation ul li {
-        padding: 0.75em 0.5em 0.75em 0.5em;
+    .main-navigation ul li 
+
+    {
+        padding: 0.53em 0.74em 0.53em 0.74em;
+        border-right: 1px solid #b40913;
+
     }
+    .main-navigation ul li:last-child
+    {
+        border-right: none;
+    }
+
 }
+
+
 
 /**
  * Plug-in Newsticker

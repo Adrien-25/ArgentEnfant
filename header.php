@@ -23,9 +23,27 @@
 
 	<header id="masthead" class="head-container" role="banner">
 
-        <div class="header-style">
-            <img class="img-header" src="<?php echo get_stylesheet_directory_uri() . "/Images/Banniere_jp.jpg" ?>" alt="">
-		</div><!-- .site-branding -->
+	<div id="super_banner">
+
+           <img class="img-header" src="<?php echo get_stylesheet_directory_uri() . "/Images/banniere.jpg" ?>" alt="">
+                   
+				<p class="reseaux">
+					<a href="" class="icones_social soundcloud" alt="soundcloud">soundcloud</a>
+					<a href="" class="icones_social tchat" alt="tchat">tchat</a>
+					<a href="" class="icones_social skype" alt="skype" >skype</a>
+					<a href="" class="icones_social twitter" alt="twitter" >twitter</a>
+					<a href="" class="icones_social facebook" alt="facebook" >facebook</a>
+					<a href="" class="icones_social youtube" alt="youtube">youtube</a>
+					<a href="" class="icones_social instagram" alt="instagram">instagram</a>
+				</p>
+		
+
+	</div>
+		
+		<div class="bandeau_slogan">
+
+			<p id="slogan">LA RADIO CARRÉMENT ROCK, LA RADIO CARRÉMENT LIBRE</p>
+		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Menu', 'argent' ); ?></button>
@@ -38,3 +56,8 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+</div>
+
+
+</html>
