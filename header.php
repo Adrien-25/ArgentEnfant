@@ -28,13 +28,13 @@
            <img class="img-header" src="<?php echo get_stylesheet_directory_uri() . "/Images/banniere.jpg" ?>" alt="">
                    
 				<p class="reseaux">
-					<a href="" class="icones_social soundcloud" alt="soundcloud">soundcloud</a>
-					<a href="" class="icones_social tchat" alt="tchat">tchat</a>
+					<a href="https://soundcloud.com/maurice-radio-libre" class="icones_social soundcloud" alt="soundcloud">soundcloud</a>
+					<a href="http://www.mauriceradiolibre.com/_popups/chat.asp?nick=&Submit=dialoguer+%21" class="icones_social tchat" alt="tchat">tchat</a>
 					<a href="" class="icones_social skype" alt="skype" >skype</a>
-					<a href="" class="icones_social twitter" alt="twitter" >twitter</a>
-					<a href="" class="icones_social facebook" alt="facebook" >facebook</a>
-					<a href="" class="icones_social youtube" alt="youtube">youtube</a>
-					<a href="" class="icones_social instagram" alt="instagram">instagram</a>
+					<a href="https://twitter.com/Maurice_Radio" class="icones_social twitter" alt="twitter" >twitter</a>
+					<a href="https://www.facebook.com/maurice.radio.libre/" class="icones_social facebook" alt="facebook" >facebook</a>
+					<a href="https://www.youtube.com/user/mauriceradiolibrecaa" class="icones_social youtube" alt="youtube">youtube</a>
+					<a href="https://www.instagram.com/maurice_radio_libre/?hl=fr" class="icones_social instagram" alt="instagram">instagram</a>
 				</p>
 		
 

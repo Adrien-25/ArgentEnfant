@@ -170,6 +170,8 @@ body{
     width:70%;
 }
 
+
+
 @media screen and (min-width: 768px){
     .main-navigation a {
         padding: 0 0;
@@ -181,24 +183,35 @@ body{
         content: "";
         margin:0;
 	}
+   
 }
 
-#primary-menu{
-   
-   
 
-}
 
-/*
-.menu-item{
-    text-align: center;
+@media screen and (min-width: 768px){
+    .menu-item 
+    {
+      color: white;
+    }
+    .menu-item:last-child
+    {
+        border: none;
+    }
+    .menu-item:hover
+    {
+    background: #a60710;
+    }
+    .menu-item ul li:last-child
+    {
+        padding: auto;
+    }
+    .menu-item ul li:first-child
+    {
+        padding: auto;
+    }
     
 }
-.menu-item:hover{
-    background-color: #a60710;
-}
 
-*/
 
 
 @media screen and (min-width: 768px){
@@ -207,7 +220,8 @@ body{
     {
         padding: 0.53em 0.74em 0.53em 0.74em;
         border-right: 1px solid #b40913;
-
+        margin-left: -5px;
+        color: white;
     }
     .main-navigation ul li:last-child
     {
@@ -216,11 +230,67 @@ body{
 
 }
 
-.sub-menu
+@media screen and (min-width: 768px){
+    .main-navigation ul ul 
 {
-    background-color: #ae0611;
+    background: #ae0611;
+    border-bottom: #d30916;
+    float: left;
+    margin-top: 1px;
+    padding: 5px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    text-align: left;
+    z-index: 999999;
 }
 
+}
+
+@media screen and (min-width: 768px){
+.main-navigation div>ul>li>ul::before
+    {
+    border-color: transparent transparent #ae0611;
+    border-style: solid;
+    border-width: 6px 6px 8px;
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    }
+ }
+
+@media screen and (min-width: 768px){
+.main-navigation ul ul li {
+    border-bottom: 2px solid #d30916;
+}
+
+}
+ 
+@media screen and (min-width: 768px){
+
+.main-navigation ul {
+    margin-right: -5px;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+  .main-navigation ul li:last-child
+    {
+        padding-right: 130px;
+
+    }
+
+.main-navigation ul li:first-child
+    {
+        padding-left: 121px;
+    
+    }
+ }
 
 /**
  * Plug-in Newsticker
@@ -250,7 +320,7 @@ body{
     border-style: none;
     border-width: 1em 0 0 1em;
     bottom: -1em;
-    content: '';
+    content: '';S
     display: block;
     left: -30px;
     position: absolute;
@@ -355,3 +425,91 @@ body{
         opacity: 0;
     }
 }
+
+
+#conteneur_footer
+{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+}
+
+.partenaires
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.icones_social_footer
+{
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 500px;
+    width: 3em;
+    height: 3em;
+    background-position: left top, 300px top;
+    background-repeat: no-repeat;
+}
+
+.icones_social_footer:hover
+{
+    background-position: -300px top , 0% top;
+
+}
+
+.soundcloud_footer
+{
+    background-image: url(Images/Logo_Soundcloud_Bannière_1.png), url(Images/Logo_Soundcloud_Banniere_2.png);
+    width: 3.5em;
+    height: 1.8em;
+    vertical-align: px;
+    margin: px;
+    position: relative;
+    right: 22px;
+}
+}
+
+.facebook_footer
+{
+    background-image: url("Images/Logo_FB_Banniere_1.png"), url("Images/Logo_FB_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -8px;
+}
+
+.instagram_footer
+{
+    background-image: url("Images/Logo_Insta_Banniere_1.png"), url("Images/Logo_Insta_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -25px;
+}
+
+.twitter_footer
+{
+    background-image: url("Images/Logo_Twitter_Banniere_1.png"), url("Images/Logo_Twitter_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -1px;
+}
+
+.youtube_footer
+{
+    background-image: url("Images/test_youtube.png"), url("Images/Logo_Youtube_Banniere_2.png");
+    width: 2em;
+    height: 2em;
+    vertical-align: baseline;
+    position: relative;
+    right: -17px;
+
+}
+
