@@ -113,7 +113,7 @@ body{
 
 .youtube
 {
-    background-image: url("Images/test_youtube.png"), url("Images/Logo_Youtube_Banniere_2.png");
+    background-image: url("Images/Logo_Youtube_Banniere_1.png"), url("Images/Logo_Youtube_Banniere_2.png");
     width: 2em;
     height: 2em;
     vertical-align: baseline;
@@ -170,6 +170,8 @@ body{
     width:70%;
 }
 
+
+
 @media screen and (min-width: 768px){
     .main-navigation a {
         padding: 0 0;
@@ -181,24 +183,35 @@ body{
         content: "";
         margin:0;
 	}
+   
 }
 
-#primary-menu{
-   
-   
 
-}
 
-/*
-.menu-item{
-    text-align: center;
+@media screen and (min-width: 768px){
+    .menu-item 
+    {
+      color: white;
+    }
+    .menu-item:last-child
+    {
+        border: none;
+    }
+    .menu-item:hover
+    {
+    background: #a60710;
+    }
+    .menu-item ul li:last-child
+    {
+        padding: auto;
+    }
+    .menu-item ul li:first-child
+    {
+        padding: auto;
+    }
     
 }
-.menu-item:hover{
-    background-color: #a60710;
-}
 
-*/
 
 
 @media screen and (min-width: 768px){
@@ -207,20 +220,112 @@ body{
     {
         padding: 0.53em 0.74em 0.53em 0.74em;
         border-right: 1px solid #b40913;
-
+        margin-left: -5px;
+        color: white;
     }
     .main-navigation ul li:last-child
     {
         border-right: none;
+       
+    }
+
+     
+
+}
+
+
+
+@media screen and (min-width: 768px){
+    .main-navigation ul.sub-menu
+{
+    
+    float: left;
+    background: transparent;
+    padding: 5px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    text-align: left;
+    
+}
+
+}
+
+
+.main-navigation ul ul a {
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .main-navigation ul.sub-menu li
+    {
+        background: #ae0611;
+    
+    }
+
+
+    .main-navigation ul.sub-menu li:hover
+    {
+    
+    background: #980710;
     }
 
 }
 
-.sub-menu
-{
-    background-color: #ae0611;
+
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+    left: 100%;
+    top: -10%;
+
 }
 
+
+@media screen and (min-width: 768px){
+.main-navigation div>ul>li>ul::before
+    {
+    border-color: transparent transparent #ae0611;
+    border-style: solid;
+    border-width: 6px 6px 8px;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    }
+ }
+
+@media screen and (min-width: 768px){
+.main-navigation ul ul li {
+    border-bottom: 2px solid #d30916;
+}
+
+}
+ 
+@media screen and (min-width: 768px){
+
+.main-navigation ul {
+    margin-right: -5px;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+  .main-navigation > ul li:last-child
+    {
+        padding-right: 130px;
+
+    }
+
+.main-navigation > ul li:first-child
+    {
+        padding-left: 121px;
+    
+    }
+ }
 
 /**
  * Plug-in Newsticker
@@ -250,7 +355,7 @@ body{
     border-style: none;
     border-width: 1em 0 0 1em;
     bottom: -1em;
-    content: '';
+    content: '';S
     display: block;
     left: -30px;
     position: absolute;
@@ -354,4 +459,289 @@ body{
     50% {
         opacity: 0;
     }
+}
+
+
+#colophon
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 1158px;
+margin-left: 10px;
+
+}
+
+.contact_bloc
+{
+    display: block;
+    position: relative;
+    right: 10px;
+    bottom: -20px;
+}
+
+#titre_contacts
+ {
+    position:  relative;
+    top: 5px;
+    font-size: 1.5em;
+    left: -22px;
+ }
+
+.newsletter_bloc
+{
+    display: block;
+    position:  relative;
+    top: -15px;
+}
+
+#titre_newsletter
+{
+    position: relative;
+    top: 30px;
+    font-size: 1.5em;
+    left: -20px;
+}
+
+#phrase_newsletter
+{
+    position: relative;
+    top: 28px;
+    right: -18%;
+    text-align: justify;
+    height: 160%;
+    width: 65%;
+    font-size: 0.95em;
+
+}
+
+.email
+{
+    position: relative;
+    right: -28px;
+    top: 20px;
+    width: 56%;
+    border: none;
+}
+
+#bouton
+{
+    display: inline-block;
+    position: relative;
+    right: -25px;
+    top: 20px;
+    background: #b40913;
+    color: white;
+    border: none;
+}
+
+#reseaux_footer
+{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1.5em;
+    padding-right: 105px;
+    padding-left: 80px;
+}
+
+.icones_social_footer
+{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-indent: 500px;
+    width: 3em;
+    height: 3em;
+    background-position: left top, 300px top;
+    background-repeat: no-repeat;
+}
+
+.icones_social_footer:hover
+{
+    background-position: -300px top , 0% top;
+
+}
+
+.soundcloud_footer
+{
+    background-image: url(Images/Logo_Soundcloud_Bannière_1.png), url(Images/Logo_Soundcloud_Banniere_2.png);
+    width: 3.5em;
+    height: 1.8em;
+    vertical-align: 0px;
+    margin: 0px;
+    position: relative;
+    right: -45px;
+}
+
+
+.facebook_footer
+{
+    background-image: url("Images/Logo_FB_Banniere_1.png"), url("Images/Logo_FB_Banniere_2.png");
+    width: 3em;
+    height: 3em;
+    vertical-align: baseline;
+    position: relative;
+    right: 0px;
+    bottom: -9px;
+}
+
+.instagram_footer
+{
+    background-image: url("Images/Logo_Insta_Banniere_1.png"), url("Images/Logo_Insta_Banniere_2.png");
+    width: 3em;
+    height: 3em;
+    vertical-align: baseline;
+    position: relative;
+    right: -24px;
+    bottom: -10px;
+}
+
+.twitter_footer
+{
+    background-image: url("Images/Logo_Twitter_Banniere_1.png"), url("Images/Logo_Twitter_Banniere_2.png");
+    width: 3em;
+    height: 3em;
+    vertical-align: baseline;
+    position: relative;
+    right: -15px;
+    bottom: -10px;
+}
+
+.youtube_footer
+{
+    background-image: url("Images/Logo_Youtube_Banniere_1.png"), url("Images/Logo_Youtube_Banniere_2.png");
+    width: 3em;
+    height: 3em;
+    vertical-align: baseline;
+    position: relative;
+    right: -32px;
+    bottom: -6px;
+
+}
+
+
+.partenaires
+{
+    display: block;
+    position: relative;
+}
+
+
+
+#titre_partenaires
+{
+    position: relative;
+    top: 15px;
+    font-size: 1.5em;
+    left: -15px;
+}
+
+
+#liens_partenaires
+{
+display: flex;
+flex-direction: row;
+
+}
+
+
+.image1_footer
+{
+    background: url("Images/repfr_image.png");
+    position: relative;
+    height: 85px;
+    width: 143px;
+    top: 20px;
+    right: -40px;
+}
+
+.image2_footer
+{
+    background: url("Images/orange_image.png");
+    position: relative;
+    height: 85px;
+    width: 140px;
+    top: 20px;
+    right: -60px;
+}
+
+.image3_footer
+{
+    background: url("Images/M6_image.png");
+    position: relative;
+    height: 85px;
+    width: 143px;
+    top: 130px;
+    right: 80px;
+}
+
+#titre_informations
+{
+    position: relative;
+    top: 15px;
+    font-size: 1.5em;
+    right: -60px ;
+}
+
+#liens_site
+{
+    display: inline-block;
+    position: relative;
+    left: 60px;
+    top: 35px;
+}
+
+.redirection
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: normal;
+}
+
+.MRL
+{
+    position: relative;
+    left: -15px;
+    bottom: -5px;
+}
+
+.CAA
+{
+    position: relative;
+    left: -15px;
+    bottom: -40px;
+}
+
+.Mentions
+{
+    position: relative;
+    left: 20px;
+    bottom: -75px;
+}
+
+.Crédit
+{
+    position: relative;
+    left: -51px;
+    bottom: -110px;
+}
+
+.copyright:nth-child(4)
+{
+    align-self: flex-end;
+    margin-left: 550px;
+    margin-bottom: -30px;
+    padding-left: 100px;
+    color: grey;
+    font-size: 0.8em;
+
+}
+
+#texte_copyright
+{
+    position: relative;
+    left: 225px;
+    bottom: -2px;
 }
