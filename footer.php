@@ -13,7 +13,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo"><!-- création d'un contenair flexbox footer -->
 
 	
-		<div class="contenair_contact_newsletter">
+		<div class="conteneur_contact_newsletter">
 
 			<div class="contact_bloc">
 
