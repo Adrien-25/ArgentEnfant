@@ -1,0 +1,984 @@
+
+:root {
+    --black: black;
+	--rouge_fonce: #d30916;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************  SLIDER  **************************************************************/
+/*************************************************************************************************************************************/
+
+.slideshow-container {
+  width: 100%;
+  height: 300px;
+  overflow:hidden;
+  margin-bottom: 20px;
+}
+.slideshow-container a{
+  width: 1344px;
+}
+.slideshow-container a,
+.slideshow-container img{
+  border: none;
+  outline:0;
+}
+
+.slideshow-container .movable{
+  width: auto;
+  display:inline-flex;
+  transform: translateX(0%);
+  transition: transform  0.8s;
+}
+
+.slideshow-container .dotCenter {
+  margin-top: -7em;
+  position: relative;
+  text-align: center;
+  width: inherit;
+}
+.slideshow-container .dotCenter a {
+  content: " ";
+  border-radius: 4em;
+  border:3px solid rgba(255,255,255,0.3);
+  display:inline-block;
+  height:1em;
+  width:1em;
+  margin: 0 0.25em;
+}
+.slideshow-container .dotCenter a.selected {
+  background-color:rgba(255,255,255,0.7);
+}
+
+/*************************************************************************************************************************************/
+/**************************************************************  YOUTUBE-VIDEO  ***********************************************************/
+/*************************************************************************************************************************************/
+
+#accueil_video {
+	background-image: url(../../plugins/MRL-Accueil/assets/Images/Video/accueil_youtube_bg.png);
+    background-repeat: repeat;
+    padding: 2%;
+    display: flex;
+}
+
+#accueil_video .container_left {
+    width: 100%;
+}
+
+#accueil_video .container_right {
+	width:40%;
+	text-align:center;
+}
+
+#accueil_video .video {
+	height:100%;
+    margin: auto;
+    border: 5px solid rgb(211,9,22);
+}
+
+#accueil_video p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    text-shadow: black 10px 5px 10px;
+}
+
+#accueil_video .logo_yt {
+	padding-top:1.5em;
+	width:80%;
+	filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.5));
+}
+
+/*************************************************************************************************************************************/
+/*************************************************   PARTICIPE_ECOUTE  **************************************************************/
+/*************************************************************************************************************************************/
+
+/* Background */
+#accueil_participeecoute {
+    background: linear-gradient(225deg, rgba(0,0,0,1) 30%, rgba(103,0,0,1) 70%);
+    background-repeat: no-repeat;
+    border-radius: 5%;
+	padding-top: 4%;
+}
+
+/* Buttons */
+#accueil_participeecoute  .buttons-container{
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.5em;
+}
+
+#accueil_participeecoute .buttons-container a{
+    backface-visibility: hidden;
+    background-origin: border-box;
+    color: transparent;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center 0, 200px 0;
+    background-size: 70%;
+}
+
+#accueil_participeecoute .buttons-container a:hover{
+    background-position:200px 0, center 0;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 12px var(--rouge_fonce));
+}
+
+#accueil_participeecoute  .buttons-container a.itemPlayer{
+    background-image: url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_PLAY_1.png), url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_PLAY_2.png);
+}
+
+#accueil_participeecoute .buttons-container a.itemSkype{
+    background-image: url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_SKYPE_1.png), url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_SKYPE_2.png);
+}
+
+#accueil_participeecoute  .buttons-container a.itemPodcast{
+    background-image: url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_PODCAST_1.png), url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_PODCAST_2.png);
+}
+
+#accueil_participeecoute  .buttons-container a.itemEmail{
+    background-image: url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_EMAIL_1.png), url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_EMAIL_2.png);
+}
+
+#accueil_participeecoute  .buttons-container a.itemDons{
+    background-image: url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_DONS_1.png), url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_DONS_2.png);
+    background-size: 90%;
+}
+
+#accueil_participeecoute  .buttons-container a.itemTchat{
+    background-image: url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_TCHAT_1.png), url(../../plugins/MRL-Accueil/assets/Images/ParticipeEcoute/Icone_TCHAT_2.png);
+}
+
+/*************************************************************************************************************************************/
+/*************************************************     T'ETAIS_LA    *****************************************************************/
+/*************************************************************************************************************************************/
+
+#accueil_tetaisla {
+	background-image: url("../../plugins/MRL-Accueil/assets/Images/Tetaisla/Fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    background-color: black;
+}
+
+#accueil_tetaisla .tetaisla-img{
+	cursor: pointer;
+    width: 15vw;
+    position: absolute;
+    top: 3.2em;
+    left: 4.1em;
+}
+
+/*************************************************************************************************************************************/
+/*****************************************************    DONS      ******************************************************************/
+/*************************************************************************************************************************************/
+
+:root {
+    --rouge_fonce: #d30916;
+}
+
+#accueil_dons {
+    background-color: black;
+    overflow:hidden;
+	display:flex;
+}
+/*
+#accueil_dons .metal {
+	height:18em;
+    width: 100%;
+	background-image: url("../../plugins/MRL-Accueil/assets/Images/Boutique/accueil_texture_metal.png");
+	filter:opacity(0.1);
+    position: absolute;
+    z-index: 0;
+}*/
+
+#accueil_dons .logo_don{
+    border-radius: 50%;
+    box-shadow:  -1px 7px 120px 53px rgba(211,9,22,1);
+}
+
+#accueil_dons .logo_crcl{
+    margin-top:7%;
+	position:relative;
+	z-index:2;
+}
+
+#accueil_dons .container_left{
+    width: 60%;
+}
+
+#accueil_dons .container_right{
+    width: 40%;
+	text-align:center;
+}
+
+#accueil_dons p {
+    color:white;
+    font-size: 0.8em;
+}
+
+#accueil_dons .bold{
+    padding-left: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#accueil_dons .light{
+    padding-left: 1em;
+    font-weight: lighter;
+}
+
+#accueil_dons ul {
+    color: white;
+    margin: 0.5em;
+}
+
+#accueil_dons li {
+	padding-left: 3.5em;
+	background-image: url(../../plugins/MRL-Accueil/assets/Images/Dons/moto.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 0.5em;
+	list-style:none;
+	list-style-position: inside;
+}
+
+#accueil_dons .bouton_mrl{
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+/*************************************************************************************************************************************/
+/*****************************************************   SEPTEMTRIONIS      **********************************************************/
+/*************************************************************************************************************************************/
+
+#accueil_septemtrionis {
+	background-color:black;
+	background-repeat: no-repeat;
+	text-align:left;
+	background-image:url("../../plugins/MRL-Accueil/assets/Images/SeptemTrionis/motos.jpg");
+	background-position: 85% 100%;
+    background-size: 45%;
+	overflow:hidden;
+}
+
+:root {
+  --rouge_fonce: #d30916;
+}
+
+#accueil_septemtrionis .septemtrionis_texte {
+	width:45%;
+	text-align:justify;
+	line-height:1em;
+	color:white;
+	font-size:0.6em;
+	padding-left:2em;
+}
+
+#accueil_septemtrionis .lundi {
+	text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    padding-top: 4vh;
+	padding-bottom:2vh;
+	width:90%;
+}
+
+#accueil_septemtrionis .container_bottom {
+	width:45%;
+	text-align:center;
+}
+
+/********************************************/
+.container_polaroids {
+    display: inline-flex;
+    text-align: center;
+}
+
+#accueil_septemtrionis .container_polaroids {
+	width: 60%;
+    height: 100%;
+    position: relative;
+    float: right;
+	margin-top:9%;
+}
+
+#accueil_septemtrionis .polaroids:nth-of-type(4n+1) {
+    transform: scale(0.8) rotate(-5deg);
+    width: 90%;
+	z-index: 2;
+    position: relative;
+}
+
+#accueil_septemtrionis .polaroids:nth-of-type(4n+2) {
+	transform: scale(0.8) rotate(6deg);
+    width: 75%;
+	z-index: 1;
+    position: relative;
+}
+
+#accueil_septemtrionis .polaroids:nth-of-type(4n+3) {
+	transform: scale(0.8) rotate(-2deg);
+    width: 65%;
+}
+
+#accueil_septemtrionis .polaroids:hover {
+	transform: scale(1) rotate(0deg);
+}
+
+#accueil_septemtrionis .motos {
+	margin-right: 15%;
+    border: 0;
+    width: 40%;
+    float: right;
+    padding-top: 1em;
+	box-shadow:none;
+}
+
+/*************************************************************************************************************************************/
+/*********************************************************  DERNIER_PODCAST  ********************************************************/
+/*************************************************************************************************************************************/
+
+
+
+#accueil_dernierpodcast {
+    background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgba(103,0,0,1) 80%);
+	text-align:left;
+	border-radius:10px;
+}
+
+#accueil_dernierpodcast .titre_dernierpodcast {
+	float:right;
+    box-sizing: border-box;
+	display: inline-block;
+    color: #fff;
+    background-color: var(--black);
+    padding: 0.25em 1em 0.5em 0em;
+    text-shadow: 2px 2px var(--rouge_fonce);
+    line-height: 1em;
+    height: 1.5em;
+    text-transform: uppercase;
+    font-size: 1em;
+	margin-top: 2vh;
+	font-family: "Arial black", "Arial";
+    font-stretch: 90%;
+}
+
+#accueil_dernierpodcast .titre_dernierpodcast:before {
+	content: "";
+    border-top: 0em solid transparent;
+    border-bottom: 1.5em solid var(--black);
+    border-left: 1.5em solid transparent;
+    position: relative;
+    right: 1.5em;
+    top: -1.45em;
+}
+
+/********************************* CORPS **************************/
+
+#accueil_dernierpodcast .logo_casque {
+    width: 70%;
+    text-align: right;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+#accueil_dernierpodcast .logo_casque:hover {
+	transform:scale(1.1,1.1) rotate(0.01turn);
+}
+
+#accueil_dernierpodcast .logo_soundcloud:hover {
+	transform:scale(1.1,1.1) rotate(0.01turn);
+}
+
+#accueil_dernierpodcast .logo_soundcloud {
+	width: 33%;
+    margin-left: 0.9em;
+    margin-top: 1em;
+}
+
+#accueil_dernierpodcast .right_container {
+	float: right;
+    padding-right: 5%;
+    text-align: right;
+}
+
+#accueil_dernierpodcast .left_container {
+	padding-top: 37%;
+    padding-left: 5%;
+}
+
+#accueil_dernierpodcast .texte_petit {
+	font-size:0.5em;
+	display:block;
+}
+
+/**********************TITRE BAS***********************/
+
+#accueil_dernierpodcast .titre2_dernierpodcast {
+    box-sizing: border-box;
+    display: inline-block;
+    color: #fff;
+    background-color: var(--rouge_fonce);
+    padding: 0.25em 0em 0.5em 1em;
+    text-shadow: 2px 2px #333;
+    line-height: 1em;
+    height: 1.5em;
+    text-transform: uppercase;
+    font-size: 1em;
+	margin-top: 2vh;
+	font-family: "Arial black", "Arial";
+    font-stretch: 90%;
+}
+
+#accueil_dernierpodcast .titre2_dernierpodcast:after {
+	content: "";
+	border-top: 0em solid transparent;
+	border-bottom: 1.5em solid var(--rouge_fonce);
+	border-right: 1.5em solid transparent;
+	position:relative;
+	right: -1.5em;
+	top: -1.45em;
+}
+
+/******************************************************************************************************************************************/
+/*********************************************************  COMITE_DES_AUDITEURS_ACTIFS  ********************************************************/
+/*****************************************************************************************************************************************/
+
+:root {
+	--rouge_fonce: #d30916;
+}
+
+#accueil_caa {
+	background-image: url("../../plugins/MRL-Accueil/assets/Images/Caa/Fond_CAA.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align:center;
+	box-shadow: 2px 2px 12px var(--rouge_fonce);
+}
+
+#accueil_caa .bouton_mrl {
+	display: inline-block;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 10px 10px rgb(112,0,0);
+    background: rgb(0,0,0);
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    font-size: 0.75em;
+    line-height: 2vh;
+    text-align: center;
+    padding: 0.8em 2.8em;
+    letter-spacing: 2px;
+	font-family: "Arial";
+    font-stretch: 90%;
+	font-weight:bold;
+}
+
+#accueil_caa .bouton_mrl:hover {
+	color:rgb(174,4,4);
+}
+
+#accueil_caa h3 {
+	padding-top:1em;
+	text-shadow: 2px 2px var(--rouge_fonce);
+	font-size:1.1em;
+	text-transform:uppercase;
+	padding-bottom:10%;
+}
+
+#accueil_caa a {
+	display: block;
+    height: inherit;
+}
+
+#accueil_caa img {
+    filter: drop-shadow(0 0 15px #d30916);
+	padding-bottom:10%;
+	transform: scale(0.9);
+    transition: transform 0.35s;
+}
+
+#accueil_caa a:hover img{
+    filter: drop-shadow(0px 0px 20px 1px #d30916);
+    transform: scale(1.2);
+    padding-bottom: 10%;
+}
+/*************************************************************************************************************************************/
+/*********************************************************  AUDITEURS  *************************************************************/
+/*************************************************************************************************************************************/
+
+
+#accueil_auditeurs {
+    background: url("/wp-content/plugins/MRL-Accueil/assets/Images/Auditeurs/accueil_auditeurs_guirlande.png"),radial-gradient(#d40916,#000);
+    background-repeat: no-repeat;
+}
+
+
+#accueil_auditeurs .logo_crcl {
+	float:right;
+	width:45%;
+	padding-top: 2vh;
+    padding-right: 2vw;
+}
+/*
+#accueil_auditeurs .container_polaroids {
+    position: relative;
+	display:inline-block;
+	text-align: center;
+	padding-bottom: 3vh;
+}
+
+
+#accueil_auditeurs .container_polaroids img {
+    border: 3px solid white;
+    border-bottom: 5vh solid white;
+    box-shadow: 5px 5px 20px rgb(0,0,0);
+}
+
+
+#accueil_auditeurs .polaroids {
+	width: 17%;
+    display: inline-block;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    border: 3px solid white;
+    border-bottom: 5vh solid white;
+    box-shadow: 5px 5px 20px rgb(0,0,0);
+    box-shadow: 5px 5px 20px rgb(0,0,0);
+    background: white;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+*/
+#accueil_auditeurs .échantillon {
+	color: rgb(255,255,255);
+    padding-left: 4em;
+    font-size: 0.5em;
+}
+
+#accueil_auditeurs .infos {
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 0.6em;
+	width:50%;
+	margin:auto;
+	line-height: 0.9em;
+	padding-bottom:2vh;
+}
+
+#accueil_auditeurs .infos a {
+	font-size:1.3em;
+	margin-top:0.5em;
+}
+
+#accueil_auditeurs a.polaroid {
+    display: inline-table;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgb(0,0,0);
+    transform: scale(0.8);
+    transition: transform 0.35s;
+	backface-visibility: hidden;
+}
+#accueil_auditeurs a.polaroid > img{
+    display: block;
+    margin: 0 auto;
+    border: 0.25em solid white;
+    border-bottom: none;
+    clear: none;
+}
+
+
+#accueil_auditeurs .polaroid:nth-of-type(4n+1) { transform: scale(0.8) rotate(-6deg);}
+#accueil_auditeurs .polaroid:nth-of-type(4n+2) { transform: scale(0.8) rotate(6deg);}
+#accueil_auditeurs .polaroid:nth-of-type(4n+3) { transform: scale(0.8) rotate(-8deg);}
+#accueil_auditeurs .polaroid:nth-of-type(4n+4) { transform: scale(0.8) rotate(9deg); }
+
+#accueil_auditeurs .polaroid:hover {
+  filter: none;
+  transform: scale(1) rotate(0deg);
+  box-shadow: 5px 5px 40px rgb(0,0,0);
+}
+/*
+.polaroid:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+*/
+
+/*************************************************************************************************************************************/
+/*********************************************************  BOUGEOTTE  *************************************************************/
+/*************************************************************************************************************************************/
+
+
+#accueil_bougeotte {
+	background-image: url("../../plugins/MRL-Accueil/assets/Images/MauriceBougeotte/Fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	border-radius:5%;
+}
+
+#accueil_bougeotte a {
+	width: 100%;
+    height: inherit;
+    display: block;
+}
+
+
+
+
+
+/*************************************************************************************************************************************/
+/*********************************************************  ILLUSTRATIONS  *************************************************************/
+/*************************************************************************************************************************************/
+
+:root {
+  --rouge_fonce: #d30916;
+}
+
+#accueil_illustrations img{
+    cursor: pointer;
+    width: 58.5%;
+    position: absolute;
+    top: 4.55em;
+    left: 5.1em;
+}
+
+#accueil_illustrations .titre_illustrations {
+	float:right;
+    box-sizing: border-box;
+	display: inline-block;
+	font-family: Arial;
+    color: #fff;
+    background-color: var(--rouge_fonce);
+    padding: 0.25em 0.5em 0.5em 0em;
+    text-shadow: 2px 2px #333;
+    line-height: 1em;
+    height: 1.5em;
+    text-transform: uppercase;
+    font-size: 1em;
+	margin-top: 3.9vh;
+	font-family: "Arial black", "Arial";
+    font-stretch: 90%;
+}
+
+#accueil_illustrations .titre_illustrations:before {
+	content: "";
+    border-top: 0em solid transparent;
+    border-bottom: 1.5em solid var(--rouge_fonce);
+    border-left: 1.2em solid transparent;
+    position: relative;
+    right: 1.2em;
+    top: -1.45em;
+}
+
+#accueil_illustrations {
+	background-image: url("../../plugins/MRL-Accueil/assets/Images/Illustrations/Fond_jp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+
+/*************************************************************************************************************************************/
+/*********************************************************  BOUTIQUE  *************************************************************/
+/*************************************************************************************************************************************/
+
+
+#accueil_boutique  {
+	background: radial-gradient(#d40916,#000000);
+	height:18em;
+    width: 100%;
+    color:white;
+}
+
+
+
+#accueil_boutique .ruban {
+	height:18em;
+    width: 100%;
+	background-image: url("../../plugins/MRL-Accueil/assets/Images/Boutique/accueil_boutique_ruban.png");
+	position:relative;	
+}
+
+#accueil_boutique .metal {
+	height:18em;
+    width: 100%;
+	background-image: url("../../plugins/MRL-Accueil/assets/Images/Boutique/accueil_texture_metal.png");
+	filter:opacity(0.1);
+    position: absolute;
+    z-index: 0;
+}
+
+#accueil_boutique .row img {
+	cursor: pointer;
+    max-width: 55%;
+    font-size: 0.6vmax;
+    text-align: center;
+	box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.30);
+}
+
+#accueil_boutique .row a:hover img{
+	transition:box-shadow 0.25s;
+	box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.30);
+	transform:scale(0.8);
+	transition:transform 0.35s;
+}
+
+#accueil_boutique .row a:hover p {
+	transform:scale(1.2);
+	transition:transform 0.35s;
+}
+	
+#accueil_boutique .logo_crcl {
+	float:right;
+	width:25%;
+	margin-top: 3vh;
+    margin-right: 3vw;
+}
+
+#accueil_boutique .nouveautés {
+    margin-top: 3vh;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-left: 5vw;
+}
+
+#accueil_boutique .row {
+	display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#accueil_boutique .row p {
+	font-size: 1em;
+    width: 70%;
+    margin: auto;
+    line-height: 1.3em;
+}
+
+#accueil_boutique .prix {
+	color:rgba(209,17,33);
+	padding-top:0.1em;
+	font-weight:bold;
+}
+
+#accueil_boutique .description{
+	color:white;
+}
+
+
+/*************************************************************************************************************************************/
+/*********************************************************  MRL_STYLE  *************************************************************/
+/*************************************************************************************************************************************/
+
+.nav-tabs{
+    float:left;
+    width:100%;
+    margin:0;
+    list-style-type: none;
+    border-bottom:1px solid #ddd;
+}
+
+.nav-tabs > li {
+    float:left;
+    margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.5;
+    padding:10px;
+    border: 1px solid transparent;
+    border-radius:  4px 4px 0 0;
+    text-decoration: none;
+}
+
+.nav-tabs > li > a:hover{
+    border-color: #eee #eee #ddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{
+    color:#555;
+    cursor:default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.tab-content > .tab-pane{
+    float: left;
+    width:100%;
+    display:none;
+}
+
+.tab-content > .tab-pane.active{
+    padding: 10px;
+    display:block;
+    background-color: #fff;
+    box-shadow: 0 5px 4px -2px rgba(0, 0, 0, 0.15);
+}
+.boutique-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boutique-field-container{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+}
+
+.boutique-save{
+    margin:15px;
+}
+
+
+
+/* SLIDER */
+#slider-body{
+background-color: rgb(221, 220, 220);
+}
+#slider-body h2{
+    font-size: x-large;
+}
+#slider-body p{
+    font-size: medium;
+}
+
+#slider-body legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+#form_add {
+    width: 50%;
+    margin: 20px auto 10px 20px;
+
+}
+#form_add label{
+    display: inline-block;
+    width: 150px;
+}
+
+#form_delete{
+    text-align: center;
+}
+.slider-input{
+    width:100px;
+    line-height:20px;
+    background-color:  rgba(233, 2, 2, 0.678);
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+.slider-input:hover{
+    background-color:  rgb(255, 0, 0);
+}
+.slider-input-delete{
+    width: auto;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+.slider-display{
+    display: inline-block;
+    border:3px solid black;
+    margin:10px 5px;
+    height:300px;
+    width:30%;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 4px 4px 4px 0px rgba(85, 85, 85, 0.815);
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+.slider-display p{
+    vertical-align: top;
+    padding:5px 5px;
+    margin: 0px;
+}
+.slider-display button{
+    text-align: center;
+}
+
+.slider-image{
+    width: 100%;
+    max-height: 50%;
+}
+
+
+/*YOU TUBE */
+#youTube-body{
+    background-color: rgb(221, 220, 220);
+    }
+#youTube-body h2{
+        font-size: x-large;
+    }
+#youTube-body p{
+        font-size: medium;
+    }
+
+#youTube-body legend {
+        background-color: #000;
+        color: #fff;
+        padding: 3px 6px;
+    }
+#youTube_add{
+        width: 50%;
+        margin: 20px auto 10px 20px;
+
+    }
+#youTube_add label{
+        display: inline-block;
+        width: 150px;
+    }
+        #youTube_add .longText{
+            width: 100%;
+        }
+        .longText::placeholder{
+            opacity: 0.5;
+        }
+
+.youTube-send{
+        width:100px;
+        line-height:20px;
+        background-color:  rgba(233, 2, 2, 0.678);
+        border: 2px solid black;
+        border-radius: 5px;
+        color: white;
+    }
+.youTube-send:hover{
+        background-color:  rgb(255, 0, 0);
+    }
+
+
+    .response{
+        font-weight: bold;
+        font-size: large;
+        color: rgba(233, 2, 2, 0.678);
+    }
+
+
+
+
+
