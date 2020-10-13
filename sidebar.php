@@ -9,7 +9,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) && ! is_active_sidebar( 'sidebar-2' ) &&
 	return;
 }
 ?>
-
+<?php /*
 <div id="secondary" class="footer-widget-area" role="complementary">
 	<div class="widget-wrapper">
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
@@ -31,3 +31,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) && ! is_active_sidebar( 'sidebar-2' ) &&
 		<?php endif; ?>
 	</div><!-- .widget-wrapper -->
 </div><!-- #secondary -->
+*/
+
+?>
