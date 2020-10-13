@@ -1,0 +1,174 @@
+#primary {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#rst {
+    font-family: Arial;
+    background-image: url("Images/Ligne_MRL.png");
+    background-size: 100%;
+    text-shadow: 0.1em 0.1em #333;
+    
+}
+
+#entete_rocksymbol {
+    height: 250px;
+    z-index: 1;
+}
+
+#entete_rocksymbol h4 {
+    float: left;
+    z-index: 1;
+    position: relative;
+}
+
+#entete_rocksymbol img {
+    clear: none;
+    margin-top: -3em;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+}
+
+#entete_rocksymbol p {
+    padding: 1em;
+    margin-top: -12em;
+    position: relative;
+    z-index: 1;
+    width: 800px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 13px;
+    float: right;
+}
+
+#CRCL {
+    width: 20%;
+    float: right;
+    border: 0;
+    padding-top: 0.8em;
+    padding-right: 0.8em;
+}
+
+#titre_rouge {
+    color: red;
+    padding: 10px;
+}
+
+.infos_bateau{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#contenu_bateau{
+    padding: 3em;
+    padding-top: 1em;
+}
+
+.infos_bateau p{
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.infos_bateau img{
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, rgba(98,33,26,1) 0%, rgba(213,32,14,1) 49%, rgba(94,21,15,1) 100%);
+    border-image-slice: 1;
+}
+
+.rocksymbol_yt {
+    display: block;
+    background-color: black;
+}
+
+.container_yt{
+    display: flex;
+    width:100%;
+    padding-top: 1em;
+}
+
+.container_yt div{
+    flex: 1 1; 
+}
+
+.container_yt_left {
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, rgba(98,33,26,1) 0%, rgba(213,32,14,1) 49%, rgba(94,21,15,1) 100%);
+    border-image-slice: 1;
+}
+
+.container_yt_right{
+    padding: 2em;
+    text-align: center;
+}
+
+.container_yt_right p {
+    color:white;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 15px;
+    padding: 2em;
+}
+
+.container_yt_right a {
+    color: white;
+    text-shadow: 0.15em 0.15em red;
+    line-height: 3em;
+    display: inline-flex;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container_yt_right img{
+    width:170px;
+    margin-left: 1em;
+    vertical-align: middle;
+}
+
+#bienfaiteurs{
+    background-color: black;
+    color: white;
+}
+
+#bienfaiteurs p {
+    display: block;
+    float: right;
+    font-size: 13px;
+    width: 65%;
+    padding-top: 15px;
+    line-height: 15px;
+}
+
+#liste_bienfaiteurs {
+    padding: 3%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#liste_bienfaiteurs a {
+    color: white;
+    font-size: 15px;
+    background-image: url(/wp-content/themes/ArgentEnfant/Images/Icone_Rock_Symbol.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    padding-left: 5.5em;
+    padding-right: 0;
+    margin-bottom: 15px;
+}
+
+#liste_bienfaiteurs a:hover{
+    padding-left: 0;
+    padding-right: 5.5em;
+    transition: all 0.8s;
+    background-position: top right;
+    text-decoration: underline;
+}
+
+.logo_bateau {
+    width: 4%;
+}
+
