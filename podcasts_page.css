@@ -1,0 +1,115 @@
+.podcasts_head>article>div>h2{
+    float: left;
+    z-index: 1;
+    position: relative;
+}
+
+.podcasts_head{
+    margin-top: 2em;
+}
+
+.podcasts_head>article>div>img{
+    clear: none;
+    margin-top: -3em;
+    position: relative;
+    width: 100%;
+}
+
+.podcasts_head>article>div>p{
+    padding: 1em;
+    margin-top: -12em;
+    position: relative;
+    z-index: 1;
+    width: 800px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 13px;
+    float: right;
+}
+
+.podcasts_content span{
+    font-size: 0.6em;
+    margin-left: 4vw;
+    color: white;
+    display: inline-block;
+    width: 55vw;
+}
+
+.podcasts_content{
+    height: 60px;
+}
+
+.page_container{
+    padding: 2em;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.page_container li{
+    color: white;
+    box-shadow: 0em 1em 2em 0.2em rgb(87,0,0);
+    background-color: black;
+    background-image: url('/wp-content/plugins/MRL-Accueil/assets/Images/DernierPodcast/accueil_podcasts.png');
+    background-repeat: no-repeat;
+    background-position: 2em 0.5em;
+    margin: 2em;
+    padding: 0.5em;
+    min-height: 8em;
+}
+
+.page_container .tags>a{
+    color:red;
+    font-size: 0.8em;
+}
+
+.page_container li > div > a{
+    font-size: 1.2em;
+    color: white;
+    transition: color 0.5s;
+}
+
+.page_container li > div > a > span{
+    color: red;
+    transition: color 0.5s;
+}
+
+
+.page_container li > div > a:hover{
+    color: red;
+    transition: color 0.5s;
+}
+
+.page_container li > div > a:hover > span{
+    color: white;
+    transition: color 0.5s;
+}
+
+
+.page_container li > time > span{
+    font-size: 1.5em;    
+}
+
+.page_container li > time{
+    background-color: red;
+    width: 60px;
+    display: inline-block;
+    height: 60px;
+    border-radius: 3em;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 1.5em;
+    padding-top: 0.8em;
+    margin-left: 10em;
+    float: left;
+    text-shadow: 2px 2px 2px black;
+}
+.page_container ul{
+    list-style: none;
+    list-style-position: inside;
+}
+
+
+.page_container li>div{
+    display: block;
+    width: 74%;
+    margin-left: 12em;
+}
