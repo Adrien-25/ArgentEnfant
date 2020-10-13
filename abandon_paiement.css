@@ -1,0 +1,69 @@
+#primary {
+    width: 67%;;
+    margin: 30px auto;
+}
+.abandon-paiement-layout>article>div>h1{
+    font-family: Arial;
+    background-image: url(Images/Ligne_MRL.png);
+    background-size: 100%;
+    text-shadow: 0.1em 0.1em #333;
+    color: #eee;
+    text-align: center;
+}
+.abandon-paiement-layout>article>div>.wp-block-columns{
+    background-color: black;
+}
+.abandon-paiement-layout{
+    color: white;
+}
+.abandon-paiement-layout .left-column h4{
+    margin: 20px 0 0 0;
+    display: inline-block;
+    font-family: Arial;
+    color: #fff;
+    background-color: var(--rouge_fonce);
+    padding: 0em 0em 0em 2em;
+    text-shadow: 2px 2px #333;
+    line-height: 2em;
+    height: 2em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: "Arial Black", "Arial";
+    box-shadow: 2px 2px 5px #333;
+    float: left;
+    z-index: 1;
+    position: relative;
+}
+.abandon-paiement-layout .left-column h4:after {
+    content: "";
+    background-color: var(--rouge_fonce);
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    transform: translateX(1em) skew(45deg, 0deg);
+    vertical-align: top;
+    box-shadow: 4px 2px 5px #333;
+}
+.abandon-paiement-layout .left-column figure,.abandon-paiement-layout .left-column p {
+    margin-left: 60px;
+}
+.abandon-paiement-layout .left-column p {
+    font-size:16px;
+}
+.abandon-paiement-layout .right-column .logo_don {
+    margin: 120px 0 0 0;
+}
+.abandon-paiement-layout .right-column .logo_don img{
+    border-radius: 50%;
+    box-shadow: -1px 7px 120px 53px rgba(211,9,22,1);
+}
+.abandon-paiement-layout .right-column p{
+    line-height: 100%
+}
+.abandon-paiement-layout .right-column p:first-of-type {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.abandon-paiement-layout .right-column .logo_crcl{
+    margin-top: 20px;
+}
