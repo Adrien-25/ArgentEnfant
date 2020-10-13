@@ -6,7 +6,7 @@
 
 
 <div id="primary" class="abandon-paiement-layout content-area">
-<?php get_template_part( 'content', 'page' ); ?>
+<?php get_template_part( 'content', 'page' ); ?> 
 </div>
 
 <?php get_footer(); ?>
