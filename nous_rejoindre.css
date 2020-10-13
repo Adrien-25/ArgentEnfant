@@ -1,0 +1,43 @@
+#deviens_membre{
+    background-color: black;
+    color: white;
+}
+
+
+#deviens_membre>p{
+    padding: 10px;
+}
+
+#formulaire{
+    display: inline-flex;
+}
+
+
+#rejoindre_droite>p{
+    color: red;
+}
+
+
+.logo_crcl{
+    margin-top: 0.5em;
+    width: 30%;
+    float: right;
+}
+
+.bouton_mrl{
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 10px 10px rgb(112,0,0);
+    background: rgb(0,0,0);
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    font-size: 0.75em;
+    line-height: 2vh;
+    text-align: center;
+    padding: 0.8em 2.8em;
+    letter-spacing: 2px;
+    font-family: "Arial";
+    font-stretch: 90%;
+    font-weight: bold;
+}
