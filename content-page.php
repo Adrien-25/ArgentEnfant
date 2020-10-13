@@ -13,7 +13,7 @@
 	<div class="page-container">
 		<?php the_content(); ?>
 	</div><!-- .page-content -->
-
+	
 	<footer class="entry-footer entry-meta">
 		<?php edit_post_link( __( 'Edit', 'argent' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
